@@ -23,15 +23,16 @@
         </classes>
     </test>
     <test name="Android MyFirstApp Test" enabled="true">
-        <parameter name="driver.capabilities.deviceName" value="05157DF5399ED633"></parameter>
-        <parameter name="env.resources" value="src/main/resources/android"/>
-        <groups>
-            <run>
-                <include name="@eyal"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
-        </classes>
-    </test>
+        <!--parameter name="driver.capabilities.deviceName" value="05157DF5399ED633"></parameter-->
+       <parameter name="driver.capabilities.platformName" value="Android"></parameter>
+       <parameter name="env.resources" value="src/main/resources/android"/>
+       <groups>
+           <run>
+               <include name="@eyal"/>
+           </run>
+       </groups>
+       <classes>
+           <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+       </classes>
+   </test>
 </suite>
