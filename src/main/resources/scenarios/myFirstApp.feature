@@ -8,5 +8,5 @@ Feature: Testing my first App
       And I start application by id "yovel.onm.myfirstandroidapp"
       When I type to my first App "perfecto"
        And I click on the set title in my first App
-      Then the title of my first App is "perfecto1"
+      Then the title of my first App is "perfecto"
 
